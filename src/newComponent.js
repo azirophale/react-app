@@ -54,8 +54,8 @@ class Compoclass extends React.Component{
          
       }  
     buttonClicked=()=>{
-        alert("clicked ...");
-        console.log("button is clicked ");
+        alert("User entered ");
+        console.log("button one is clicked ");
     }
 
     render(){
@@ -66,8 +66,8 @@ class Compoclass extends React.Component{
                 <p><label>name</label><input type="text" name="username" ref={node => (this.name = node)}></input></p>
                 <p><label>Email</label><input type="email" name="mail" ref={node => (this.eMail = node)}></input></p>
                 <p><label>Time</label><input type="date" ref={node => (this.Date = node)}></input></p>
-                <button type="submit" onClick={this.buttonClicked}>Read this fast </button>
-                <br></br><button type="button" onClick={this.button2Clicked()}>testing this button </button>
+                <button type="submit" onClick={this.buttonClicked}>Add User</button>
+                {/* <br></br><button type="button" onClick={this.button2Clicked()}>testing this button </button> */}
                 {/* </form> */}
             </div>
         )
